@@ -117,12 +117,12 @@
                     },
                     toAddressEditPage(item){
                         window.requestAnimationFrame(()=>{
-                            window.location.href= `/front/page/address-edit.html?id=${item.id}`
+                            window.location.href= `address-edit.html`
                         })
                     },
                     toAddressCreatePage(){
                         window.requestAnimationFrame(()=>{
-                            window.location.href= '/front/page/address-edit.html'
+                            window.location.href= 'address-edit.html'
                         })
                     },
                     async initData(){
@@ -148,7 +148,7 @@
                         //表示是从订单页面跳转过来的
                         if(url.includes('order')){
                             this.setDefaultAddress(item)
-                            window.location.href = '/front/page/add-order.html';
+                            window.location.href = 'add-order.html';
                         }
                     }
 

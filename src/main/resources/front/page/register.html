@@ -129,7 +129,7 @@
                         this.loading = false;
                         if (res.code === 1) {
                             window.requestAnimationFrame(() => {
-                                window.location.href = '/front/page/login.html';
+                                window.location.href = 'login.html';
                             });
                         } else {
                             this.$notify({ type: 'warning', message: res.msg });

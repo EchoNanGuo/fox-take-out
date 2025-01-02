@@ -7,7 +7,7 @@ import org.springframework.http.converter.json.MappingJackson2HttpMessageConvert
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import top.nanguomm.reggie_take_out.interceptor.UserLoginCheckInterceptor;
+import top.nanguomm.reggie_take_out.interceptor.LoginCheckInterceptor;
 import top.nanguomm.reggie_take_out.json.JacksonObjectMapper;
 
 import java.util.List;
@@ -16,7 +16,7 @@ import java.util.List;
 public class WebMvcConfig implements WebMvcConfigurer {
 
     @Autowired
-    private UserLoginCheckInterceptor userLoginCheckInterceptor;
+    private LoginCheckInterceptor loginCheckInterceptor;
 
     /**
      * 配置静态资源
@@ -45,10 +45,10 @@ public class WebMvcConfig implements WebMvcConfigurer {
         String[] staticPattern = new String[]{"/front/**","/backend/**"};
 
         //登录退出注册操作的信号
-        String[] loginPatterns = new String[] {"/user/login","/user/register","/user/loginout","/user/code","/error"};
+        String[] loginPatterns = new String[] {"/user/login","/user/register","/user/loginout","/user/code","/employee/login","/error"};
 
         //给用户放行的拦截器
-        registry.addInterceptor(userLoginCheckInterceptor).addPathPatterns("/**")
+        registry.addInterceptor(loginCheckInterceptor).addPathPatterns("/**")
                 .excludePathPatterns(loginPatterns)
                 .excludePathPatterns(swaggerPatterns)
                 .excludePathPatterns(staticPattern);
