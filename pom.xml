@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>top.nanguomm</groupId>
-    <artifactId>reggie_take_out</artifactId>
+    <artifactId>fox-take-out</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>reggie_take_out</name>
-    <description>reggie_take_out</description>
+    <name>fox-take-out</name>
+    <description>fox_take_out</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -127,7 +127,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>top.nanguomm.reggie_take_out.ReggieTakeOutApplication</mainClass>
+                    <mainClass>top.nanguomm.fox.FoxTakeOutApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>

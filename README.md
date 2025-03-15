@@ -1,4 +1,4 @@
-# reggie_take_out
+# fox_take_out
 
 ## 效果图
 
@@ -25,5 +25,3 @@ https://wwuq.lanzouk.com/iOq8o218tckd
 *用户界面访问127.0.0.1:8080/front/index.html*
 
 *管理员界面访问127.0.0.1:8080/front/index.html*
-
-
