@@ -15,7 +15,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-@ApiModel(value = "员工表", description = "接收前端员工登录信息")
+@ApiModel(value = "员工表", description = "接收前端员工登录信息表单")
 public class EmployeeLoginFormDTO {
 
     @ApiModelProperty("用户名")
