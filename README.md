@@ -14,7 +14,8 @@
 
 *资源图片*
 
-https://wwuq.lanzouk.com/iOq8o218tckd
+https://wwuq.lanzoup.com/iVTeP2trfw7i
+密码:37uw
 
 ![图片](https://raw.githubusercontent.com/EchoNanGuo/fox-take-out/refs/heads/master/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-01-02%20223034.png)
 
